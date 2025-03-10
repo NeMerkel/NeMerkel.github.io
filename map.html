@@ -13,6 +13,14 @@
         nav a:hover { color: #FFF; }
         .container { max-width: 1000px; margin: 20px auto; padding: 30px; background-color: rgba(255, 255, 255, 0.9); border-radius: 10px; box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); text-align: center; }
         .info-box { padding: 20px; margin: 15px 0; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); background-color: #FFF; }
+        .contact-box { background-color: #333; color: #FFA500; padding: 20px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); }
+        .contact-box h3, .reviews h3 { text-align: center; }
+        .reviews { margin-top: 30px; background-color: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); }
+        .review { margin-bottom: 15px; padding: 10px; background-color: #f9f9f9; border-radius: 5px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); }
+        .comment-form { background-color: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); margin-top: 30px; }
+        .comment-form input, .comment-form textarea { width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 5px; }
+        .comment-form button { background-color: #FFA500; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; }
+        .comment-form button:hover { background-color: #FF7F00; }
     </style>
 </head>
 <body>
@@ -25,8 +33,6 @@
         <a href="/houses">Дома</a>
         <a href="/commercial">Коммерческая</a>
         <a href="/land">Земля</a>
-        <a href="/services">Услуги</a>
-        <a href="contacts.html">Контакты</a>
     </nav>
     
     <div class="container">
@@ -41,6 +47,47 @@
         <div class="info-box">
             <h2>Профессиональная помощь</h2>
             <p>Наши эксперты помогут вам на всех этапах сделки – от поиска объекта до оформления документов.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="info-box">
+            <h2>О нас</h2>
+            <p>Наша компания работает на рынке недвижимости в Минске более 10 лет. Мы специализируемся на продаже и аренде жилья, коммерческих объектов и земельных участков. Мы ценим доверие наших клиентов и гарантируем высокий уровень обслуживания.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="contact-box">
+            <h3>Контакты</h3>
+            <p>Телефон: +375 (29) 123-45-67</p>
+            <p>Электронная почта: info@markelov-realty.by </p>
+            <p>Адрес: г. Минск, ул. Центральная, 10</p>
+            <p>Часы работы: Пн-Пт: 9:00 - 18:00</p>
+        </div>
+    </div>
+
+    <div class="container reviews">
+        <h3>Отзывы наших клиентов</h3>
+        <div class="review">
+            <p><strong>Анна</strong> – "Отличная компания! Быстро нашли нам квартиру, помогли оформить все документы. Рекомендую!"</p>
+        </div>
+        <div class="review">
+            <p><strong>Максим</strong> – "Очень профессиональные сотрудники. Сделка прошла без проблем, все чётко и понятно!"</p>
+        </div>
+        <div class="review">
+            <p><strong>Ирина</strong> – "Нашли дом мечты! Все вопросы по ипотеке и оформлению помогли решить быстро и качественно."</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="comment-form">
+            <h3>Оставьте комментарий</h3>
+            <form>
+                <input type="text" name="name" placeholder="Ваше имя" required>
+                <textarea name="comment" rows="5" placeholder="Ваш комментарий" required></textarea>
+                <button type="submit">Отправить комментарий</button>
+            </form>
         </div>
     </div>
 </body>
